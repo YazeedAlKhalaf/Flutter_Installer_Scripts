@@ -86,7 +86,11 @@ menu() {
                 echo "Bye Bye!"
                 break
                 ;;
-            *) echo "Invalid option $REPLY";;
+            *) 
+                clear
+                header
+                menu
+                ;;
         esac
     done
 }
