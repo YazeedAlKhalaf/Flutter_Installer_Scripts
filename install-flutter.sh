@@ -15,7 +15,6 @@ header() {
 windows() {
     echo "You Chose Windows"
     emptySpace
-    downloadLocation='`pwd`'
     emptySpace
     echo "Downloading Flutter SDK for Windows... (This may take a while)"
     emptySpace
@@ -23,7 +22,7 @@ windows() {
     emptySpace
     echo "Unzipping Flutter SDK... (This may take a while)"
     emptySpace
-    unzip *.zip
+    unzip flutter_windows_1.17.5-stable.zip
     emptySpace
     echo "Now you have to add the Flutter SDK to the PATH variable:"
     echo "1. Press Windows key"
@@ -32,7 +31,7 @@ windows() {
     echo "4. Click on the \"Path\" variable in user variables"
     echo "5. Click \"Edit\" button"
     echo "6. Click on \"New\" button"
-    echo "7. Paste this: `pwd`/flutter"
+    echo "7. Paste this: `pwd`/flutter/bin"
 }
 
 macOS() {
