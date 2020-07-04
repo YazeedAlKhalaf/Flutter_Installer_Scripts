@@ -42,11 +42,10 @@ macOS() {
 linux() {
     echo "You Chose Linux"
     emptySpace
-    downloadLocation='`pwd`'
     emptySpace
     echo "Downloading Flutter SDK for Linux... (This may take a while)"
     emptySpace
-    # wget https://storage.googleapis.com/flutter_infra/releases/stable/linux/flutter_linux_1.17.5-stable.tar.xz
+    wget https://storage.googleapis.com/flutter_infra/releases/stable/linux/flutter_linux_1.17.5-stable.tar.xz
     emptySpace
     echo "Unzipping Flutter SDK... (This may take a while)"
     emptySpace
@@ -57,7 +56,7 @@ linux() {
     echo "2. Type: \"sudo nano /etc/profile\" or \"sudo nano ~/.bashrc\""
     echo "      note: OTHER THAN THAT YOU MUST KNOW IT :)"
     echo "3. Add this line to the end:"
-    echo "      export PATH=\"\$PATH:/home/yazeed/development/extra/flutter/bin\""
+    echo "      export PATH=\"\$PATH:`pwd`/flutter/bin\""
     echo "4. Exit with saving changes by:"
     echo "      - Press \"CTRL + X\""
     echo "      - Press \"Y\""
