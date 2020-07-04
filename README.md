@@ -2,7 +2,7 @@
 
 ## Progress
 
-> Windows is 90% done
+> Windows is 100% done
 >
 > Linux is 100% done
 >
